@@ -18,11 +18,12 @@ class SplashActivity : Activity() {
         val isTv = packageManager.hasSystemFeature(PackageManager.FEATURE_LEANBACK)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = if (isTv) {
-                Intent(this, com.example.tskg.tv.MainActivity::class.java)
-            } else {
-                Intent(this, com.example.tskg.mobile.MainActivity::class.java)
+            if (!isTv) {
+                finishAffinity()
+                return@postDelayed
             }
+
+            val intent =  Intent(this, com.example.tskg.tv.MainActivity::class.java)
             startActivity(intent)
             finish()
         }, 1500)
