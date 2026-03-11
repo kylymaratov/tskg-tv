@@ -21,5 +21,3 @@ A simple app for browsing and watching film series and anime (ad‑free).
 - Future migration planned to React Native.
 
 ---
-
-© 2026
