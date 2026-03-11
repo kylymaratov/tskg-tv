@@ -1,6 +1,6 @@
-# TS.KG (Android, WebOsHub) TV
+# TS.KG Android TV
 
-A simple Tv app for browsing and watching film series and anime (ad‑free).
+A simple app for browsing and watching film series and anime (ad‑free).
 
 ## ✅ What it is
 - Android TV focused UI (Leanback-style navigation)
